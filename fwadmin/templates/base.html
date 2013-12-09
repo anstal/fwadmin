@@ -7,13 +7,10 @@
 <head>
   <title>{% block title %}Firewall-Admin{% endblock %}</title>
 
-  <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
+  <link rel="stylesheet" href="{{ STATIC_URL }}components/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="{{ STATIC_URL }}css/datatable.css" />
-  <!-- <link rel="stylesheet" href="{{ STATIC_URL }}components/bootstrap.css/css/bootstrap.min.css" /> -->
-  
-  <!-- bootstrap3 css -->
-  <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap3/css/bootstrap.css" />
-  <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
+
   {% render_block 'css' %}
 </head>
 <body>
@@ -51,13 +48,9 @@
   </footer>
 
   <script src="{{ STATIC_URL }}components/jquery/jquery.min.js"></script>
-  <script src="{{ STATIC_URL }}components/bootstrap.css/js/bootstrap.min.js"></script> 
+  <script src="{{ STATIC_URL }}components/bootstrap/dist/js/bootstrap.min.js"></script> 
   <script src="{{ STATIC_URL }}components/datatables/media/js/jquery.dataTables.js"></script> 
   <script src="{{ STATIC_URL }}js/datatable.bootstrap.js"></script> 
-
-  <!-- bootstrap3 js -->
-  <script src="{{ STATIC_URL }}bootstrap3/js/bootstrap.js"></script>
-  <script src="{{ STATIC_URL }}bootstrap3/js/bootstrap.min.js"></script>  
   {% render_block 'js' %}
 </body>
 </html>
